@@ -7,7 +7,7 @@ from tensorflow.python.keras.utils.generic_utils import get_custom_objects
 class Swish(KL.Layer):
 
     def call(self, inputs):
-        return tf.nn.swish(inputs)
+        return (K.sigmoid(inputs) * inputs)
 
 
 class DropConnect(KL.Layer):

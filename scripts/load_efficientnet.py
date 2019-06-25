@@ -21,7 +21,7 @@ import numpy as np
 
 import tensorflow as tf
 from efficientnet.model import _get_model_by_name
-from keras.layers import BatchNormalization, Conv2D, Dense
+from tensorflow.keras.layers import BatchNormalization, Conv2D, Dense
 
 
 def group_weights(weights):
